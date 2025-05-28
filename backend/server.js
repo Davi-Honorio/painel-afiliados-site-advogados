@@ -46,3 +46,9 @@ async function start() {
 }
 
 start();
+start().then(() => {
+  console.log("🔁 Função start() finalizou.");
+}).catch(err => {
+  console.error("🔥 Erro no start():", err);
+});
+
