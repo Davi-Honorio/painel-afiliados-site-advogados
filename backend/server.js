@@ -22,6 +22,7 @@ app.post('/api/cadastro', (req, res) => {
 
 // Inicia o servidor
 const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
